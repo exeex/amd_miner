@@ -1,3 +1,6 @@
 .*
 /miner/*log.txt
 !/.gitignore
+
+Downloads/*
+update
