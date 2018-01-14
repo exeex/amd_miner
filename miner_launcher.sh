@@ -7,8 +7,8 @@ else
 fi
 sleep $DELAY
 
-sudo /home/min2/amdgpu-pro-fans/amdgpu-pro-fans.sh -s 60
-cd /home/min2/miner
-su min2 -c "screen -dmS ethm ./start.bash"
+sudo /home/min/amdgpu-pro-fans/amdgpu-pro-fans.sh -s 60
+cd /home/min/miner
+su min -c "screen -dmS ethm ./start.bash"
 
 #sudo /home/min2/amdgpu-pro-fans/amdgpu-pro-fans.sh -s 60
