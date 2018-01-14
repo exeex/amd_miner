@@ -1,5 +1,19 @@
 ## 安裝相關套件
-sudo apt-get install -y openssh-server ocl-icd-opencl-dev libcurl3 xz-utils unzip
+sudo apt-get install -y openssh-server ocl-icd-opencl-dev libcurl3 xz-utils unzip screen vim
+
+
+## 抓挖礦腳本
+## 這是我個人的維護的腳本庫，未來會持續新增一些相關功能
+## 你也可以從官方抓Claymore來用
+cd ~/Downloads
+wget https://github.com/exeex/amd_miner/archive/master.zip &&\
+unzip master.zip &&\
+cp -r amd_miner-master/* ~/ &&\
+cd
+
+##腳本設置
+echo "alias miner='screen -x ethm'" >> ~/.bashrc
+
 
 
 ## 安裝驅動
