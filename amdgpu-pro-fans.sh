@@ -50,7 +50,7 @@ usage ()
 set_all_fan_speeds ()
 {
     cardcount="0";
-    for CurrentCard in  /sys/class/drm/card?/ -o /sys/class/drm/card?/; do
+    for CurrentCard in  /sys/class/drm/card?/ -o /sys/class/drm/card??/; do
          for CurrentMonitor in "$CurrentCard"device/hwmon/hwmon* ; do
               cd $CurrentMonitor # &>/dev/null
               workingdir="`pwd`"
